@@ -1,4 +1,4 @@
-import { postDatos } from "../server/datos";
+import { postDatos } from "../services/datos";
 
 let formulario = document.getElementById("formulario");
 let alerta = document.getElementById("alerta");
@@ -28,6 +28,7 @@ formulario.addEventListener("submit", async (e) => {
     fechaSalida: fechaSalida,
     fechaEntrada: fechaEntrada,
     codePc: codePc,
+    estado: "pendiente",
   };
 
   await postDatos(datos);

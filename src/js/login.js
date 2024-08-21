@@ -15,7 +15,13 @@ loginForm.addEventListener("submit", async (e) => {
 
   if (!validUser) {
     texto.innerHTML = "Username and/or password are incorrect";
+
+    setTimeout(() => {
+      texto.innerHTML = "";
+    }, 2000);
+
     return;
   }
+
   window.location.href = "home.html";
 });

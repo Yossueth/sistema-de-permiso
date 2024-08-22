@@ -70,6 +70,24 @@
       "fechaEntrada": "2024-09-08",
       "codePc": "99RD7S2",
       "estado": "pendiente"
+    },
+    {
+      "id": "1569",
+      "nombre": "pepe",
+      "sede": "Nosara",
+      "fechaSalida": "2024-08-16",
+      "fechaEntrada": "2024-08-25",
+      "codePc": "99RD7S2",
+      "solicitud": "pendiente"
+    },
+    {
+      "id": "1e5a",
+      "nombre": "marco",
+      "sede": "Santa Ana",
+      "fechaSalida": "2024-07-29",
+      "fechaEntrada": "2024-09-08",
+      "codePc": "99RD7S2",
+      "solicitud": "pendiente"
     }
   ]
 }

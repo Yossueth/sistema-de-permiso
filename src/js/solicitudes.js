@@ -26,6 +26,10 @@ async function dataPc() {
     fechaEntrega.innerHTML = element.fechaEntrada;
     contenedor.appendChild(fechaEntrega);
 
+    let solicitud = document.createElement("p");
+    solicitud.innerHTML = element.solicitud;
+    contenedor.appendChild(solicitud);
+
     let btnAceptar = document.createElement("button");
     btnAceptar.innerHTML = "Aceptar";
     contenedor.appendChild(btnAceptar);

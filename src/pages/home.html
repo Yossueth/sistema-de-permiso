@@ -10,10 +10,10 @@
     <h1 id="titulo">Registro de salidas de computadoras</h1>
     <form id="formulario">
       <div class="container">
-        <label class="titulos">nombre completo</label>
+        <label class="titulos">Nombre completo</label>
         <input type="text" id="nombre" placeholder="Ingrese su nombre" />
 
-        <label class="titulos">sede</label>
+        <label class="titulos">Sede</label>
         <select id="sede">
           <option>Puntarenas</option>
           <option>Santa Ana</option>
@@ -26,16 +26,21 @@
         <label class="titulos">Fecha de Entrada</label>
         <input type="date" id="FechaEntrada" />
 
-        <label class="titulos">codigo de la computadora</label>
-        <input type="text" id="codePc" placeholder="Ingrese el codigo" />
+        <label class="titulos">Código de la computadora</label>
+        <input type="text" id="codePc" placeholder="Ingrese el código" />
 
         <div class="terminos">
-          <label> <strong>Aceptoterminos y condiciones</strong></label>
+          <label><strong>Acepto términos y condiciones</strong></label>
           <input type="checkbox" id="check" />
         </div>
-        <div class="btn">
-          <input type="submit" value="enviar" />
-        </div>
+
+        <button type="button" class="modal-terminos">
+          Términos y condiciones
+        </button>
+
+        <dialog class="btn">
+          <input type="submit" value="Enviar" />
+        </dialog>
       </div>
     </form>
     <p id="alerta"></p>

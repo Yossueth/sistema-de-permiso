@@ -30,17 +30,43 @@
         <input type="text" id="codePc" placeholder="Ingrese el código" />
 
         <div class="terminos">
-          <label><strong>Acepto términos y condiciones</strong></label>
+          <label id="abrirModal"
+            ><strong>Acepto términos y condiciones</strong></label
+          >
           <input type="checkbox" id="check" />
         </div>
 
-        <button type="button" class="modal-terminos">
-          Términos y condiciones
-        </button>
-
-        <dialog class="btn">
-          <input type="submit" value="Enviar" />
+        <dialog class="modal">
+          <p id="cerrarModal">X</p>
+          <p>
+            ▪ Si viajas en transporte público, debes resguardar tu equipo en tu
+            bolso personal, no exponerlo.
+          </p>
+          <p>▪ Si llevas el equipo, procura ir acompañado.</p>
+          <p>
+            ▪ Si está lloviendo, procura llevar el equipo en un vehículo
+            apropiado para evitar algún daño.
+          </p>
+          <p>
+            ▪ Evitar jugar, descargar o utilizar el equipo para otros motivos
+            que no sean relacionados con el estudio.
+          </p>
+          <p>
+            ▪ El equipo será revisado antes y después de ser entregado.
+            Cualquier alteración o instalación indebida podría resultar en la
+            pérdida de privilegios.
+          </p>
+          <p>
+            ▪ Si retiras una computadora sin haber completado el formulario y la
+            boleta física, podrías ser amonestado.
+          </p>
+          <p>
+            ▪ Este formulario debe llenarse junto con la boleta física, que debe
+            estar firmada por la persona encargada.
+          </p>
+          
         </dialog>
+        <input type="submit" value="Enviar" />
       </div>
     </form>
     <p id="alerta"></p>

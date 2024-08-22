@@ -3,7 +3,9 @@ import { postDatos } from "../services/datos";
 let formulario = document.getElementById("formulario");
 let alerta = document.getElementById("alerta");
 let check = document.getElementById("check");
-let botonEnviar = document.getElementById("botonEnviar");
+let abrirModal = document.getElementById("abrirModal");
+let cerrarModal = document.getElementById("cerrarModal");
+let modal = document.querySelector(".modal");
 
 formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -41,8 +43,17 @@ formulario.addEventListener("submit", async (e) => {
 
   await postDatos(datos);
   alerta.innerHTML = "solicitud eniada con exito";
+
   setTimeout(() => {
     alerta.innerHTML = "";
   }, 3000);
   return;
+});
+
+abrirModal.addEventListener("click", () => {
+  modal.showModal();
+});
+
+cerrarModal.addEventListener("click", () => {
+  modal.close();
 });

@@ -29,6 +29,21 @@
   margin-left: 400px;
 }
 
-#alerta{
-text-align: center;
+#alerta {
+  text-align: center;
+}
+
+#cerrarModal {
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  left: 935px;
+  top: -25px;
+  font-size: 25px;
+  width: 30px;
+  color: red;
+}
+
+#abrirModal {
+  cursor: pointer;
 }

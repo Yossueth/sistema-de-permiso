@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "celdaFechaSalida": "2024-08-15",
+            "celdaFechaEntrada": "2024-08-01",
+            "celdaIdComputadora": "PC001",
+            "celdaAprobacion": "Aprobado",
+            "celdaNombre": "Ana López"
+        },
+        {
+            "celdaFechaSalida": "2024-08-20",
+            "celdaFechaEntrada": "2024-08-05",
+            "celdaIdComputadora": "PC002",
+            "celdaAprobacion": "Pendiente",
+            "celdaNombre": "Carlos Martínez"
+        },
+        {
+            "celdaFechaSalida": "2024-08-25",
+            "celdaFechaEntrada": "2024-08-10",
+            "celdaIdComputadora": "PC003",
+            "celdaAprobacion": "Rechazado",
+            "celdaNombre": "Marta Fernández"
+        }
+    ]
+}

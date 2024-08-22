@@ -27,7 +27,7 @@ datos.forEach(item => {
     celdaAprobacion.textContent = item.celdaAprobacion;
     fila.appendChild(celdaNombre);
     
-    const celdaNombre = document.createElemen("td")
+    const celdaNombre = document.createElement("td")
     celdaNombre.textContent = item.celdaNombre;
     fila.appendChild(celdaNombre);
 
@@ -38,21 +38,55 @@ datos.forEach(item => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const datos = await getUsers();
-    if (datos) {
-        agregarDatosATabla(datos)
+    try {
+        const datos = await getUsers();
+
+        if (datos) {
+            agregarDatosATabla(datos);
+        }
+    } catch (error) {
+        console.error('Error al obtener los datos:', error);
     }
 });
 
 
 
-const buscador = document.getElementById("buscador");
-const btnBuscar = document.getElementById("btnBuscar");
 
-const filtrar = ()=>{
-    console.log(buscador.value);
+const buscador = document.getElementById("buscador");
+const btnBuscar = document.getElementById("btnBuscar")
+
+ 
+btnBuscar.addEventListener("click", filtrar);
+
+function filtrar() {
+   const valorBusqueda = buscador.value.toLowerCase();
+   
+   const filas = Array.from(document.querySelectorAll("#requestsBody tr"));
+
+   const filasFiltradas = filas.filter(fila => {
+    const celdas = fila.querySelectorAll("td");
+    let textoFila = "";
+
+    celdas.forEach(celda => {
+        textoFila += celda.textContent.toLocaleLowerCase() + " ";
+
+        
+    });
+//Esto verifica que lo que esta en la fila sea verdadero o falso dependiendo la busqueda.
+    return textoFila.includes(valorBusqueda);
     
+   });
+   
+   filas.forEach(fila => {
+   fila.style.display = filasFiltradas.includes(fila) ? "" : "none";
+
+    
+});
 }
+
+
+
+
 
 
 
